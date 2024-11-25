@@ -22,7 +22,7 @@ public class Main {
                 System.out.print("Выберите действие: ");
 
                 int choice = scanner.nextInt();
-                scanner.nextLine(); // Очистка буфера
+                scanner.nextLine(); 
 
                 if (choice == 0) {
                     System.out.println("Выход из программы...");
@@ -31,7 +31,7 @@ public class Main {
 
                 try {
                     switch (choice) {
-                        case 1: // Добавить группу
+                        case 1: 
                             System.out.print("Введите название группы: ");
                             String groupName = scanner.nextLine();
                             System.out.print("Введите номер группы: ");
@@ -43,7 +43,7 @@ public class Main {
                             System.out.println("Группа добавлена: " + group.getName());
                             break;
 
-                        case 2: // Добавить ребенка
+                        case 2: 
                             System.out.print("Введите ФИО ребенка: ");
                             String childName = scanner.nextLine();
                             System.out.print("Введите пол ребенка (М/Ж): ");
@@ -60,7 +60,7 @@ public class Main {
                             System.out.println("Ребенок добавлен: " + child.getFullName());
                             break;
 
-                        case 3: // Редактировать группу
+                        case 3: 
                             System.out.print("Введите ID группы: ");
                             int editGroupId = scanner.nextInt();
                             scanner.nextLine();
@@ -76,7 +76,7 @@ public class Main {
                             System.out.println("Группа обновлена: " + editGroup.getName());
                             break;
 
-                        case 4: // Редактировать ребенка
+                        case 4: 
                             System.out.print("Введите ID ребенка: ");
                             int editChildId = scanner.nextInt();
                             scanner.nextLine();
@@ -96,7 +96,7 @@ public class Main {
                             System.out.println("Данные ребенка обновлены: " + editChild.getFullName());
                             break;
 
-                        case 5: // Удалить группу
+                        case 5: 
                             System.out.print("Введите ID группы: ");
                             int deleteGroupId = scanner.nextInt();
                             scanner.nextLine();
@@ -105,7 +105,7 @@ public class Main {
                             System.out.println("Группа удалена.");
                             break;
 
-                        case 6: // Удалить ребенка
+                        case 6: 
                             System.out.print("Введите ID ребенка: ");
                             int deleteChildId = scanner.nextInt();
                             scanner.nextLine();
@@ -114,7 +114,7 @@ public class Main {
                             System.out.println("Ребенок удален.");
                             break;
 
-                        case 7: // Показать группы с детьми
+                        case 7: 
                             system.getGroupsWithChildren();
                             break;
 
